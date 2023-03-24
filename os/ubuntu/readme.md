@@ -38,6 +38,8 @@ To set a static IP address for your Ubuntu server, follow these steps:
 $ sudo nano /etc/netplan/01-netcfg.yaml
 ```
 
+<br />
+
 2. Add the following lines to the file, replacing the `IP address`, `gateway`, and `DNS server` values with your own:
 
 ```yaml
@@ -54,6 +56,8 @@ network:
 ```
 
 > You can find the network interface by running `ip addr show`
+
+<br />
 
 3. Save and close the file.
 4. Apply the changes by running the following command:
