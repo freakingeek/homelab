@@ -35,20 +35,36 @@ The `netplan` package is responsible for managing network connections in Ubuntu.
 <br />
 
 ## Static IP
-
+To set a static IP address, follow these steps:
 
 <br />
 
 ## Changing Default SSH Port
+It's important to change the default SSH port number to improve security. Here's how you can do it:
+
+First open the `sshd_config` file in this path:
 
 ```sh
 $ sudo vim /etc/ssh/sshd_config
 ```
 
-Restart the `ssh` service
+Uncomment the `#Port 22` part and set it to something else, like `2222`:
+
+```
+Include /etc/ssh/sshd_config.d/*.conf
+
+Port 2222
+#AddressFamily any
+#ListenAddress 0.0.0.0
+#ListenAddress ::
+
+```
+
+And then restart the `ssh` and `sshd` services:
 
 ```sh
 $ sudo systemctl restart ssh
+$ sudo systemctl restart sshh
 ```
 
 
@@ -62,5 +78,5 @@ $ sudo systemctl restart ssh
 ### Add Docker to the user groups
 
 ```sh
-$ sudo usermom -aG docker $USER
+$ sudo usermod -aG docker $USER
 ```
