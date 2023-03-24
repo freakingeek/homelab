@@ -29,7 +29,7 @@ $ sudo apt-get update && sudo apt-get upgrade
 <br />
 
 ### Internet Problem
-The `netplan` package is responsible for managing network connections in Ubuntu. If you are unable to access the internet after installing Ubuntu, you may need to modify the netplan configuration file located at `/etc/netplan/SOME_CONFIG,yml`.  
+The `netplan` package is responsible for managing network connections in Ubuntu. If you are unable to access the internet after installing Ubuntu, you may need to modify the netplan configuration file located at `/etc/netplan/SOME_CONFIG.yml`.  
 
 
 <br />
