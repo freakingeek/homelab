@@ -1,3 +1,5 @@
+![Ubuntu Banner](https://github.com/sttatusx/homelab/raw/main/os/ubuntu/banner.png)
+
 # Ubuntu Server with Static IP and Docker Installation Guide
 
 If you're setting up a home lab or a development environment, Ubuntu Server is a great choice due to its ease of use and popularity. In this guide, we'll go through the steps required to install Ubuntu Server, configure a static IP address, and install Docker.
@@ -145,4 +147,3 @@ It's also recommended to add your user account to the `docker` group, so you can
 ```sh
 $ sudo usermod -aG docker $USER
 ```
-
